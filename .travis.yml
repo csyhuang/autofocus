@@ -4,7 +4,7 @@ python:
   - "3.5"
 
 install:
-  -  "pip install py-pkg/"
+  - pip install .
 
 script:
   - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm test || npm run pull-test'
