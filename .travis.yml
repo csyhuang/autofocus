@@ -4,7 +4,12 @@ python:
   - "3.5"
 
 install:
-  - pip install .
+  - pip install click
+  - pip install mlflow
+  - pip install pandas
+  - pip install pillow
+  - pip install tensorflow
+  - pip install tensorflow_hub
 
 script:
   - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm test || npm run pull-test'
