@@ -10,7 +10,4 @@ install:
   - pip install pillow
   - pip install tensorflow
   - pip install tensorflow_hub
-
-script:
-  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm test || npm run pull-test'
-
+  - python setup.py -q install
